@@ -24,4 +24,4 @@ app.use('/', createProxyMiddleware({
 })
 );
 
-app.listen(11433, () => console.log('Proxy attivo su http://localhost:11433'));
+app.listen(11433, '0.0.0.0', () => console.log('Proxy attivo su http://0.0.0.0:11433'));
